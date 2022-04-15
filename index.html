@@ -14,14 +14,16 @@
         <img src="./assets/logo.png" alt="Logo erador de senha" class="logo">
     </header>
     <main>
-        <p>Tamanho <span id="value"></span> caracteres.</p>
+        <p>Tamanho: <span id="value"></span> caracteres.</p>
         <input type="range" name="size-value" id="size-value" class="size-value" min="3" max="30" value="15">
-        <button id="btn-generate-password" class="btn-generate-password">Gerar senha</button>
+        <button id="btn-generate-password" class="btn-generate-password" onclick="createPassword()">Gerar senha</button>
     </main>    
     <footer id="generated-password-container" class="generated-password-container hide">
-        <p>Sua senha gerada foi: </p>
-        <span id="generated-password" class="generated-password">12343435</span>
+        <p>Sua senha gerada foi</p>
+        <span id="generated-password" class="generated-password" onclick="copyPassword()">12343435</span>
         <span class="tocopy">Clique na senha para copiar!</span>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
